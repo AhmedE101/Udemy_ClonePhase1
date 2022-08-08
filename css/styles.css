@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.NavigationBr {
+    z-index: 99999;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    display: flex;
+    list-style-type: none;
+    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+}
+
+.NavigationBr div {
+    margin: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.SearchBox {
+    position: relative;
+    height: 3.2rem;
+    border: 1px solid #1c1d1f;
+    border-radius: 99999px;
+    text-align: left;
+    padding-left: 44px;
+    background-color: #f7f9fa;
+    margin: 0 1.2rem;
+}
+
+.SearchBr {
+    display: flex;
+    flex-grow: 1;
+}
+
+.SearchBtn {
+    position: absolute;
+    left: 240px;
+    top: 22px;
+}
+
+.UdemyHP img {
+    width: 91px;
+}
+
+.Language {
+    width: 18px;
+}
+
+.Wheeler img {
+    margin: 10px;
+    width: 30px;
+}
+
+.SearchBr button img {
+    width: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.NavigationBr div button {
+    background-color: white;
+    border: 0px;
+}
+
+.NavigationBr div button a:hover {
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.Login {
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    line-height: 22px;
+
+}
+
+.Login a {
+    text-decoration: none;
+    color: #1c1d1f;
+    font-weight: 700;
+
+}
+
+.Login:hover {
+    background-color: #f7f9fa;
+
+}
+
+.SignIn {
+    background-color: #1c1d1f;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    line-height: 22px;
+
+}
+
+.SignIn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.SignIn:hover {
+    background-color: black;
+}
+
+.LanguageBtn {
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    padding-top: 3px;
+}
+
+.LanguageBtn:hover {
+    background-color: #f7f9fa;
+}
+
+.SmallScreenNavBar {
+    display: none;
+    align-items: left;
+    justify-content: left;
+}
+
+.Toogle img {
+    width: 40px;
+}
+
+.SmallScreenHP img {
+    width: 100px;
+}
+
+.SmallScreenNavBar button {
+    border: none;
+}
+
+.SmallScreenHP {
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 1100px) {
+    div.UdemyBusiness {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    div.UdemyTeaching {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .NavigationBr {
+        display: none;
+    }
+
+    .SmallScreenNavBar {
+        display: flex;
+    }
+}
+
+/*NavigationBr End*/
+
+
+.BillboardCon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BillPic {
+    position: relative;
+}
+
+.BillBoardSign {
+    padding: 35px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    background-color: white;
+    width: 350px;
+    height: 150px;
+}
+
+
+.SmallBill {
+    display: none;
+}
+
+@media only screen and (max-width: 1500px) {
+    .BillPic img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: initial;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .BigBill {
+        display: none;
+    }
+
+    .SmallBill {
+        display: flex;
+    }
+
+    .BillBoardSign {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 370px;
+    }
+
+    .BillPic {
+        box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    }
+}
+
+.CoursesContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+
+}
+
+.CoursesContainer ul {
+    display: flex;
+}
+
+.CoursesContainer ul li {
+    margin: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+
+}
+
+.Courses {
+    margin-top: 44px;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 1.6rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.Courses p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    margin-top: 10px;
+}
+
+.CoursesHeadLine {
+    margin-top: 10px;
+}
+
+.CoursesHeadLine ul {
+    overflow-x: scroll;
+}
+
+.CoursesHeadLine ul li:hover {
+    color: #757575;
+
+}
+
+.CoursesHeadLine ul li {
+    text-decoration: solid;
+}
+
+.CoursesIntro {
+    width: 870px;
+    max-width: 100%;
+    height: 100px;
+}
+
+.CoursesIntro p {
+    display: block !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-bottom: 1.6rem;
+}
+
+.CourseList {
+    position: relative;
+    margin-left: 7px;
+    margin-top: 5px;
+    width: 1400px;
+    padding: 44px;
+    border: 1px solid rgb(188, 188, 188);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 2px 6px rgb(0 0 0 / 8%);
+
+}
+
+.CourseList h4 {
+    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+}
+
+.CourseList img {
+    width: 100%;
+}
+
+.CourseList a {
+    text-decoration: none;
+    color: black;
+    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+
+}
+
+.PythonEXP {
+    border: 1px solid black;
+    width: 170px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    padding-left: 15px;
+}
+
+.PythonEXP:hover {
+    background-color: #f7f9fa;
+}
+
+.CourseList ul {
+    max-width: 100%;
+    display: flex;
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+.CourseList li {
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+
+}
+
+figcaption {
+    margin-top: 5px;
+}
+
+.CourseInstructor {
+    color: #757575;
+    font-size: small;
+    margin-top: 5px;
+}
+
+.Rating {
+    font-size: medium;
+    font-weight: 500;
+    color: #B4690E;
+}
+
+.NumOfPar {
+    font-size: small;
+    color: #83869C;
+}
+
+@media only screen and (max-width: 1500px) {
+    .CoursesContainer {
+        justify-content: left;
+        align-items: left;
+        margin: 10px 36px;
+    }
+
+    .Courses {
+        width: 100%;
+    }
+
+    .CourseList {
+        width: 94.5%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .FifthCourse a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .FourthCourse a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .ThirdCourse a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .SecondCourse a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .CoursesIntro {
+        display: none;
+    }
+
+    .PythonEXP {
+        display: none;
+    }
+
+    .CourseList h4 {
+        display: none;
+    }
+
+    .CourseList ul {
+        margin-top: 0px;
+    }
+}
